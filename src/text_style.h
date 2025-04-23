@@ -8,7 +8,7 @@ using namespace std;
 namespace style
 {
     /**
-     * This resets the style
+     * This resets the style,
      */
     ostream &reset(ostream &os)
     {
@@ -16,47 +16,71 @@ namespace style
         return os;
     }
 
+    /**
+     * This make succeeding characers bold until the next `style::reset` flag
+     */
     ostream &bold(ostream &os)
     {
         os << "\033[1m";
         return os;
     }
 
+    /**
+     * This make succeeding characers grayish until the next `style::reset` flag.
+     */
     ostream &faded(ostream &os)
     {
         os << "\033[2m";
     }
 
+    /**
+     * This make succeeding characers italic until the next `style::reset` flag.
+     */
     ostream &italic(ostream &os)
     {
         os << "\033[3m";
         return os;
     }
 
+    /**
+     * This will underline succeeding characers until the next `style::reset` flag.
+     */
     ostream &underline(ostream &os)
     {
         os << "\033[4m";
         return os;
     }
 
+    /**
+     * This will make succeeding characers until the next `style::reset` flag blink.
+     */
     ostream &blink(ostream &os)
     {
         os << "\033[5m";
         return os;
     }
 
+    /**
+     * This will invert the foreground and background of the succeeding characers until the next `style::reset` flag.
+     */
     ostream &inv(ostream &os)
     {
         os << "\033[7m";
         return os;
     }
 
+    /**
+     * This will color text to be the same as background succeeding characers until the next `style::reset` flag.
+     */
     ostream &hide(ostream &os)
     {
         os << "\033[8m";
         return os;
     }
 
+    /**
+     * This will strike-through succeeding characers until the next `style::reset` flag.
+     */
     ostream &strike(ostream &os)
     {
         os << "\033[9m";

@@ -16,3 +16,4 @@ As of this momment, only a collection of header files (`.h`). To use, just get c
 
 Note that the current modules where written in a rush and are **NOT FULLY TESTED YET**. The author will not be held accountable for any damage this modules may cause.
 **Use at your own risk**.
+
